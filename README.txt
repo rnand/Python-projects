@@ -1,0 +1,1 @@
+This repo contains some of the small projects that I did in the process of learning Python 2.7.
