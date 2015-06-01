@@ -13,11 +13,17 @@ def div(a,b):
 def powr(a,b):
         print a**b
 
+class num(object):
+        def __init__(self):
+                self.x=0
+                self.y=0
+        def get(self):
+                self.x=int(raw_input("Enter the first number:"))
+                self.y=int(raw_input("Enter the second number:"))
 
-x=int(raw_input("Enter the first number:"))
-y=int(raw_input("Enter the second number:"))
 
-##enter_num()
+n=num()
+n.get()
 flag=True
 while(flag):
         print "Press 1 for addition."
@@ -26,21 +32,21 @@ while(flag):
         print "Press 4 for division."
         print "Press 5 for taking the power."
         print "==============================="
-        ##print "Press 7 to enter new numbers."
+        print "Press 7 to enter new numbers."
         print "PRESS 9 TO QUIT"
         choice=int(input("Enter your choice:"))
         if choice==1:
-                add(x, y)
+                add(n.x, n.y)
         elif choice==2:
-                sub(x,y)
+                sub(n.x,n.y)
         elif choice==3:
-                mul(x,y)
+                mul(n.x,n.y)
         elif choice==4:
-                div(x,y)
+                div(n.x,n.y)
         elif choice==5:
-                powr(x,y)
-        ##elif choice==7:
-        ##        enter_num()
+                powr(n.x,n.y)
+        elif choice==7:
+               n.get()
         elif choice==9:
                 flag=False
 
