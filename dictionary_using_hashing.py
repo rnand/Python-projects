@@ -28,3 +28,8 @@ class IntegerDict(object):
 			for e in b:
 				result = result + str(e[0]) + ':' + str(e[1]) + ','
 		return result[:-1] + '}' 
+
+
+dic=IntegerDict(2)
+dic.add_entry(1,"ABC")
+print dic.get_value(1)
