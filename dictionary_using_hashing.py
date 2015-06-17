@@ -30,6 +30,9 @@ class IntegerDict(object):
 		return result[:-1] + '}' 
 
 
+
 dic=IntegerDict(2)
 dic.add_entry(1,"ABC")
+dic.add_entry(2,"DEF")
 print dic.get_value(1)
+print dic.get_value(2)
